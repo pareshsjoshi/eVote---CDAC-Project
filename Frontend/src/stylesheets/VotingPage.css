@@ -1,0 +1,57 @@
+.election-voting-system {
+    background-color: #f4f4f4;
+    padding: 20px;
+    /* background-color: #e8c264; */
+}
+
+.poll-container {
+    justify-content: center;
+    /* max-width: 800px; */
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.candidate-list {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.candidate-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.candidate-id {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.candidate-name {
+    flex-grow: 1;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-successes {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+}
+
+.vote-results {
+    background-color: #d4edda;
+    padding: 15px;
+    border-radius: 5px;
+    color: #155724;
+    margin-top: 20px;
+}

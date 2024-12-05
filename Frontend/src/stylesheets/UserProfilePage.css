@@ -1,0 +1,128 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; 
+  margin: 0;
+  padding: 0;
+}
+
+.user-profile-page {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #ffffff; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-page h1 {
+  font-size: 28px;
+  color: black; 
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.profile-container {
+  background: #f1f1f1; 
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container:hover {
+  background: #e9ecef;
+  transition: 0.3s ease;
+}
+
+
+.profile-container p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #212529; 
+}
+
+.profile-container strong {
+  color: #000000; 
+}
+
+
+.edit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+.edit-form .form-input,
+textarea,
+select {
+  background: #ffffff; 
+  color: #212529; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  grid-column: span 2;
+}
+
+select {
+  grid-column: span 2;
+}
+
+.edit-form .form-input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #007bff; 
+}
+
+
+.error-message {
+  color: #ff0000; 
+  font-size: 14px;
+  grid-column: span 2;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #007bff; 
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background-color: #4caf50; 
+}
+
+.cancel-btn {
+  background-color: #f44336; 
+}
+
+.edit-btn {
+  background-color: #4caf50; 
+}
+
+.delete-btn {
+  background-color: #f44336; 
+}
+

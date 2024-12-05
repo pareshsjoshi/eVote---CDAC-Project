@@ -1,0 +1,62 @@
+   body {
+     font-family: Arial, sans-serif;
+   }
+
+
+   .feedback-page {
+     max-width: 900px;
+     margin: 2% auto;
+     padding: 10px;
+     background: white;
+     border-radius: 20px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     text-align: center;
+
+   }
+
+   .feedback-form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     align-items: center;
+   }
+
+   .category-label {
+     align-self: flex-start;
+     padding-left: 5%;
+   }
+
+   .dropdown-input {
+     width: 90%;
+     padding: 10px;
+     font-size: 16px;
+     border-radius: 5px;
+     border: 2px solid rgba(0, 0, 0, 0.503);
+   }
+
+   .textarea-input {
+     width: 90%;
+     padding: 10px;
+     font-size: 16px;
+     border-radius: 5px;
+     border: 2px solid rgba(0, 0, 0, 0.503);
+   }
+
+
+   .thank-you-message {
+     font-size: 18px;
+     font-weight: bold;
+     color: Green;
+   }
+
+
+   .submit-btn {
+     background-color: #007bff;
+     color: white;
+     width: 120px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     font-size: 16px;
+     text-align: center;
+     margin-top: 20px;
+   }

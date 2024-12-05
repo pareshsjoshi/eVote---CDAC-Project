@@ -1,0 +1,76 @@
+/* Login.css */
+
+/* Ensure the body and html take up the full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* This will create a flex container that centers the form both vertically and horizontally */
+  .login-container {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center;     /* Center the form vertically */
+    /* min-height: 100vh;           Full viewport height */
+    background-color: #f0f0f0; /* Light background color for the page */
+    margin: 2% 0%;               /* Remove default margin */
+  }
+  
+  /* Styling for the login form */
+  .login-form {
+    background-color: #fff; /* White background for the form */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 100%;
+    max-width: 400px; /* Limit form width */
+    text-align: center; /* Center text inside the form */
+  }
+  
+  /* Styling for the form inputs and button */
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background for the login button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Adds space between the Login button and Forgot Password button */
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Styling for the error message */
+  .login-form p {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Forgot password button (blue color) */
+  .login-form button.forgot-password {
+    width: 100%; /* Ensure the forgot password button spans the full width */
+    background-color: #007bff; /* Blue background for the forgot password button */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Adds space above the forgot password button */
+  }
+  
+  .login-form button.forgot-password:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

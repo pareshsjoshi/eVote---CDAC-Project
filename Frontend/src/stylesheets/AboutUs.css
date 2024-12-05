@@ -1,0 +1,74 @@
+/* General container styles */
+.about-us-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us-container h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  /* Content section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* CDAC link section button styling */
+  .cdac-link-button {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cdac-link-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-container h1 {
+      font-size: 2rem;
+    }
+  
+    .card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .card p {
+      font-size: 0.95rem;
+    }
+  }
+  

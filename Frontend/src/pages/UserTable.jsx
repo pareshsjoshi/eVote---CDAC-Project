@@ -34,7 +34,7 @@ const UserTable = () => {
         </thead>
         <tbody>
           {demoData.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.user_id}>
               <td>{item.user_id}</td>
               <td>{item.name}</td>
               <td>{item.email}</td>

@@ -27,7 +27,7 @@ const VotesTable = () => {
         </thead>
         <tbody>
           {demoData.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.vote_id}>
               <td>{item.vote_id}</td>
               <td>{item.user_id}</td>
               <td>{item.poll_id}</td>

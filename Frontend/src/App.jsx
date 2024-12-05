@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+// import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import ErrorBoundary from "./components/ErrorBoundary";
+import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage";
+import AdminDashboard from "./pages/AdminDashboard";
+import LoginPage from "./pages/LoginPage";
+import ForgotPassword from "./pages/ForgotPassword";
+import PollCreationPage from "./pages/PollCreationPage";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./router/routes";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+
+// import AboutPage from "./pages/AboutPage";
+// import VoterDashboard from "./pages/VoterDashboard";
+// import PollsPage from "./pages/PollsPage";
+// import CandidateManagementPage from "./pages/CandidateManagementPage";
+// import VoterManagementPage from "./pages/VoterManagementPage";
+// import ResultsPage from "./pages/ResultsPage";
+// import RegisterPage from "./pages/RegisterPage";
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <ErrorBoundary>
+          <Header/>
+          <AppRoutes/>
+      </ErrorBoundary>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

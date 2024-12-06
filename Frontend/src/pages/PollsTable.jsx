@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Table, Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const PollsTable = () => {
   const demoData = [
@@ -13,7 +14,7 @@ const PollsTable = () => {
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
-          <Button variant="primary">Add Poll</Button>
+          <Button as={Link} to="/admin/poll-create" variant="primary">Add Poll</Button>
         </Col>
       </Row>
       <Table striped bordered hover>

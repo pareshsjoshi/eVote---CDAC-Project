@@ -9,11 +9,13 @@ import PollsTable from "./PollsTable";
 import UserTable from "./UserTable";
 import VotesTable from "./VotesTable";
 import LogsTable from "./LogsTable";
+import CandidateRegistration from "./CandidateRegistration";
+import RegistrationPage from "./RegistrationPage";
 
 const AdminRouter = () => {
   return (
     <Routes>
-      <Route path={"/"} element={<Dashboard />} ></Route>
+      <Route path={"/"} element={<AdminDashboard />} ></Route>
       <Route path={"/dashboard"} element={<AdminDashboard />} ></Route>
       <Route path={"/candidate-records"} element={<CandidateTable />} ></Route>
       <Route path={"/poll-records"} element={<PollsTable />} ></Route>
@@ -21,6 +23,8 @@ const AdminRouter = () => {
       <Route path={"/vote-records"} element={<VotesTable />} ></Route>
       <Route path={"/log-records"} element={<LogsTable />} ></Route>
       <Route path={"/poll-create"} element={<PollCreationPage />} ></Route>
+      <Route path={"/candidate-create"} element={<CandidateRegistration />} ></Route>
+      <Route path={"/user-create"} element={<RegistrationPage />} ></Route>
     </Routes>
   );
 };

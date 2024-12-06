@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Table, Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const UserTable = () => {
   const demoData = [
@@ -13,7 +14,7 @@ const UserTable = () => {
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
-          <Button variant="primary">Add User</Button>
+          <Button as={Link} to="/admin/user-create" variant="primary">Add User</Button>
         </Col>
       </Row>
       <Table striped bordered hover>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Table, Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const CandidateTable = () => {
   const demoData = [
@@ -48,7 +49,7 @@ const CandidateTable = () => {
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
-          <Button variant="primary">Add Candidate</Button>
+          <Button as={Link} to="/admin/candidate-create" variant="primary">Add Candidate</Button>
         </Col>
       </Row>
       <Table striped bordered hover>

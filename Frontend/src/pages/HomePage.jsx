@@ -41,6 +41,20 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        <div className="col-md-3 mb-4"></div>
+
+        <div className="col-md-6 mb-4">
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <h3>Upcoming Elections</h3>
+              <p className="text-muted">
+                Stay informed about the upcoming elections and be prepared to vote.
+              </p>
+              <Link to="/polls" className="btn btn-success">View Elections</Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -11,15 +11,6 @@ const UserProfilePage = () => {
       contact: "9876543210",
       address: "Shree Niwas, pune",
     },
-    {
-      aadhar: "987654321012",
-      name: "Akash Mali",
-      email: "akash.mali@example.com",
-      dob: "1999-02-23",
-      gender: "Male",
-      contact: "8765432190",
-      address: "Samarth Colony,Jalgaon",
-    },
   ]);
 
   const [editingUserId, setEditingUserId] = useState(null);

@@ -16,8 +16,8 @@ const RegistrationPage = () => {
 
   const validationSchema = Yup.object().shape({
     aadhar_number: Yup.string()
-    .matches(/^[2-9]{1}[0-9]{11}$/, "Aadhar Number must be 12 digits and cannot start with 0 or 1")
-    .required("Aadhar Number is required"),
+      .matches(/^[2-9]{1}[0-9]{11}$/, "Aadhar Number must be 12 digits and cannot start with 0 or 1")
+      .required("Aadhar Number is required"),
     email: Yup.string().email('Invalid email').required('Email is required'),
     password: Yup.string()
       .required('Password is required')
@@ -148,26 +148,29 @@ const RegistrationPage = () => {
                     </Form.Group>
                   </Col>
                 </Row>
-
-                {/* Gender */}
-                <Form.Group className="mb-3">
-                  <Form.Label>Gender</Form.Label>
-                  <div>
-                    <label className="me-5">
-                      <Field className="me-2" name="gender" type="radio" value="Male" />
-                      Male
-                    </label>
-                    <label className="me-5">
-                      <Field className="me-2" name="gender" type="radio" value="Female" />
-                      Female
-                    </label>
-                    <label>
-                      <Field className="me-2" name="gender" type="radio" value="Other" />
-                      Other
-                    </label>
-                  </div>
-                  <ErrorMessage name="gender" component="div" className="text-danger" />
-                </Form.Group>
+                <Row>
+                  <Col md={6}>
+                    {/* Gender */}
+                    <Form.Group className="mb-3">
+                      <Form.Label>Gender</Form.Label>
+                      <div className="d-inline-flex align-items-center gap-3">
+                        <label className="d-flex align-items-center">
+                          <Field className="me-2" name="gender" type="radio" value="Male" />
+                          Male
+                        </label>
+                        <label className="d-flex align-items-center">
+                          <Field className="me-2" name="gender" type="radio" value="Female" />
+                          Female
+                        </label>
+                        <label className="d-flex align-items-center">
+                          <Field className="me-2" name="gender" type="radio" value="Other" />
+                          Other
+                        </label>
+                      </div>
+                      <ErrorMessage name="gender" component="div" className="text-danger" />
+                    </Form.Group>
+                  </Col>
+                </Row>
                 <Row>
                   <Col md={8}>
                     {/* Address */}

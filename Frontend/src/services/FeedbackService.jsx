@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { ADMIN_API_BASE_URL } from '../constants/ApiConstants';
 
 const FEEDBACK_API_BASE_URL = "http://localhost:8080/feedback";
 
 export function getFeedbacks() {
-    return axios.get(FEEDBACK_API_BASE_URL);
+    return axios.get(`${ADMIN_API_BASE_URL}/feedback`);
 }
 
 export function createFeedback(feedback) {

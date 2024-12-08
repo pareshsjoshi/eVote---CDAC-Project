@@ -40,16 +40,16 @@ const FeedbackPage = () => {
     //   return;
     // }
     try {
-      const response = await createFeedback(form).then(() => {
-        navigate("/admin/candidate-records");
-      });
+      const response = await createFeedback(form);//.then(() => {
+        // navigate("/admin/candidate-records");
+      // });
       if (response.status === 200) {
         console.log("Successfully created candidate!")
       }
     } catch (error) {
       console.log(error);
     }
-    // setSubmitted(true);
+    setSubmitted(true);
     // setFeedback("");
     // setCategory("Voting Poll"); 
   };

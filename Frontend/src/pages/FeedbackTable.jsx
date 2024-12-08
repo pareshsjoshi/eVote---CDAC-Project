@@ -8,6 +8,7 @@ const FeedbackListComponent = () => {
     const getAllFeedbacks = async () => {
         try {
           const response = await getFeedbacks();
+          console.log(response.data);
           setFeedbacks(response.data);
         } catch (error) {
           console.log(error);

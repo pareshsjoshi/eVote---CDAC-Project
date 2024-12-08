@@ -1,30 +1,29 @@
 import React, { useState } from "react";
 import "../stylesheets/CandidateRegistration.css";
+import { createCandidate } from "../services/CandidateServices";
+import { useNavigate } from "react-router-dom";
 
 const CandidateRegistration = () => {
-  
+
   const [form, setForm] = useState({
     name: "",
     userId: "",
     pollId: "",
     agenda: "",
   });
-
   const [candidates, setCandidates] = useState([]);
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
-  
-  const validateName = (name) => /^[a-zA-Z\s]+$/.test(name); 
-  const validateUserId = (userId) => /^[0-9]{1,10}$/.test(userId); 
-  const validatePollId = (pollId) => /^[0-9]{1,10}$/.test(pollId); 
+
+  const validateName = (name) => /^[a-zA-Z\s]+$/.test(name);
+  const validateUserId = (userId) => /^[0-9]{1,10}$/.test(userId);
+  const validatePollId = (pollId) => /^[0-9]{1,10}$/.test(pollId);
   const validateAgenda = (agenda) => agenda.trim() !== "";
 
-  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-
-    
     let error = "";
     if (name === "name" && !validateName(value)) {
       error = "Name must only contain letters and spaces.";
@@ -38,37 +37,29 @@ const CandidateRegistration = () => {
     setErrors({ ...errors, [name]: error });
   };
 
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-
-    if (
-      Object.values(errors).some((error) => error) ||
-      Object.values(form).some((value) => value === "")
-    ) {
+    if (Object.values(errors).some((error) => error) || Object.values(form).some((value) => value === "")) {
       alert("Please fix errors and fill all fields before submitting.");
       return;
     }
-
-    
-    setCandidates([...candidates, form]);
-
-    
-    setForm({
-      name: "",
-      userId: "",
-      pollId: "",
-      agenda: "",
-    });
-
-    alert("Candidate registered successfully!");
+    try {
+      const response = await createCandidate(form).then(() =>{
+        navigate("/admin/candidate-records");
+      });
+      if (response.status === 200) {
+        console.log("Successfully created candidate!")
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
     <div className="candidate-registration">
       <h1>Candidate Registration</h1>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="form-group">
           <label>Name:</label>
           <input
@@ -116,25 +107,10 @@ const CandidateRegistration = () => {
           {errors.agenda && <p className="error-message">{errors.agenda}</p>}
         </div>
 
-        <button type="submit" className="btn register-btn">
+        <button className="btn register-btn" onClick={handleSubmit}>
           Register Candidate
         </button>
       </form>
-
-      <h2>Registered Candidates</h2>
-      {candidates.length > 0 ? (
-        <ul className="candidate-list">
-          {candidates.map((candidate, index) => (
-            <li key={index}>
-              <strong>Name:</strong> {candidate.name} | <strong>User ID:</strong>{" "}
-              {candidate.userId} | <strong>Poll ID:</strong>{" "}
-              {candidate.pollId} | <strong>Agenda:</strong> {candidate.agenda}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>No candidates registered yet.</p>
-      )}
     </div>
   );
 };

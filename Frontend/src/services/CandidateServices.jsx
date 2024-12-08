@@ -1,28 +1,23 @@
 import axios from "axios";
-import { CANDIDATE_API_URL } from "../constants/ApiConstants"
-class CandidateServices {
+import { ADMIN_API_BASE_URL } from "../constants/ApiConstants"
 
-    fetchAllCandidates() {
-        const test = axios.get(`${CANDIDATE_API_URL}`);
-        console.log(test);
-        return test;
-    }
-
-    fetchCandidateById(candidate_id) {
-        return axios.get(`${CANDIDATE_API_URL}/${candidate_id}`);
-    }
-
-    createCandidate(candidate) {
-        return axios.post(`${CANDIDATE_API_URL}/add`, candidate);
-    }
-
-    updateCandidate(candidate_id, candidate) {
-        return axios.put(`${CANDIDATE_API_URL}/update/${candidate_id}`, candidate);
-    }
-
-    deleteCandidateById(candidate_id) {
-        return axios.get(`${CANDIDATE_API_URL}/delete/${candidate_id}`);
-    }
+export function fetchAllCandidates() {
+    const test = axios.get(`${ADMIN_API_BASE_URL}/candidate-records`);
+    return test;
 }
 
-export default new CandidateServices;
+export function fetchCandidateById(candidate_id) {
+    return axios.get(`${ADMIN_API_BASE_URL}/${candidate_id}`);
+}
+
+export function createCandidate(candidate) {
+    return axios.post(`${ADMIN_API_BASE_URL}/candidate-create/save`, candidate);
+}
+
+export function updateCandidate(candidate_id, candidate) {
+    return axios.put(`${ADMIN_API_BASE_URL}/update/${candidate_id}`, candidate);
+}
+
+export function deleteCandidateById(candidate_id) {
+    return axios.delete(`${ADMIN_API_BASE_URL}/delete/${candidate_id}`);
+}

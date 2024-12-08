@@ -1,35 +1,96 @@
 import React, { useEffect, useState } from "react";
-import { Button, Table, Container, Row, Col } from 'react-bootstrap';
+import { Button, Table, Container, Row, Col, Modal, ToastContainer } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import CandidateServices from "../services/CandidateServices";
+import { deleteCandidateById, fetchAllCandidates, updateCandidate } from "../services/CandidateServices";
 
 const CandidateTable = () => {
-  const demoData = [
-    { id: 1, user_id: 1, name: "John Doe", poll_id: 28, agenda: "Lorem Ipsum", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { id: 2, user_id: 2, name: "Jane Smith", poll_id: 34, agenda: "Lorem Ipsum", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { id: 3, user_id: 3, name: "Michael Brown", poll_id: 42, agenda: "Lorem Ipsum", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { id: 4, user_id: 4, name: "Emily Davis", poll_id: 25, agenda: "Lorem Ipsum", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" }
-  ];
-
   const [candidates, setCandidates] = useState([]);
-  const getCandidatesData = async () => {
-    try{
+  const [editRowId, setEditRowId] = useState(null); // ID of the row being edited
+  const [editData, setEditData] = useState({}); // Temporary storage for edited row data
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCandidateId, setSelectedCandidateId] = useState(0);
+
+  const getAllCandidates = async () => {
+    try {
       const response = await fetchAllCandidates();
-      console.log(response.data);
       setCandidates(response.data);
-    }
-    catch(error){
+    } catch (error) {
       console.log(error);
     }
-  }
+  };
+
+  const handleCandidateDelete = async () => {
+    try {
+      const response = await deleteCandidateById(selectedCandidateId);
+      if (response.status === 200) {
+        // toast.success(response.data.message);
+        getAllCandidates();
+      }
+    } catch (error) {
+      console.log(error);
+      // toast.error("Error deleting candidate.");
+    } finally {
+      closeModal();
+    }
+  };
+
+  const handleEditClick = (candidate) => {
+    setEditRowId(candidate.candidateId); // Set the ID of the row being edited
+    setEditData({ ...candidate }); // Populate editData with the current row's data
+  };
+
+  const handleInputChange = (field, value) => {
+    setEditData((prevData) => ({
+      ...prevData,
+      [field]: value,
+    }));
+  };
+
+  const handleSaveClick = async () => {
+    if (!editData.name || !editData.agenda || !editData.pollId) {
+      alert("Name and Agenda are required!");
+      return;
+    }
+    else {
+      try {
+        const response = await updateCandidate(editData.candidateId, editData);
+        if (response.status === 200) {
+          // toast.success(response.data.message);
+          getAllCandidates();
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    // Replace with actual API call
+    console.log("Saving:", editData);
+
+    setCandidates((prevCandidates) =>
+      prevCandidates.map((candidate) =>
+        candidate.candidateId === editRowId ? editData : candidate
+      )
+    );
+
+    setEditRowId(null); // Reset edit row
+    setEditData({});
+  };
+
+  const handleCancelClick = () => {
+    setEditRowId(null); // Exit edit mode
+    setEditData({});
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
-    CandidateServices.fetchAllCandidates().then((res) => {
-      console.log(res.data);
-      setCandidates(res.data);
-    })
-    // getCandidatesData();
-  },[]);
+    getAllCandidates();
+  }, []);
 
   return (
     <Container className="mt-4">
@@ -53,41 +114,106 @@ const CandidateTable = () => {
           </tr>
         </thead>
         <tbody>
-          {
-            candidates.map((candidate) => (
-            <tr>
-              <td>{candidate.id}</td>
-              <td>{candidate.name}</td>
-              <td>{candidate.poll_id}</td>
-              <td>{candidate.agenda}</td>
-              <td>{candidate.created_at}</td>
-              <td>{candidate.created_by}</td>
-              <td>{candidate.updated_at}</td>
-              <td>{candidate.updated_by}</td>
-              <td>
-                <div style={{ display: 'flex', gap: '5px' }}>
-                  <Button variant="warning" size="sm">Edit</Button>
-                  <Button variant="danger" size="sm">Delete</Button>
-                </div>
-              </td>
-            </tr>
-          ))}
+          {candidates.map((candidate) =>
+            editRowId === candidate.candidateId ? (
+              // Row in Edit Mode
+              <tr key={candidate.candidateId}>
+                <td>{candidate.candidateId}</td>
+                <td>
+                  <input
+                    type="text"
+                    value={editData.name || ""}
+                    onChange={(e) => handleInputChange("name", e.target.value)}
+                    required
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    value={editData.pollId || ""}
+                    onChange={(e) => handleInputChange("pollId", e.target.value)}
+                    required
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    value={editData.agenda || ""}
+                    onChange={(e) => handleInputChange("agenda", e.target.value)}
+                    required
+                  />
+                </td>
+                <td>{candidate.createdAt}</td>
+                <td>{candidate.createdBy}</td>
+                <td>{candidate.updatedAt}</td>
+                <td>{candidate.updatedBy}</td>
+                <td>
+                  <div style={{ display: 'flex', gap: '5px' }}>
+                    <Button variant="success" size="sm" onClick={handleSaveClick}>
+                      Save
+                    </Button>
+                    <Button variant="secondary" size="sm" onClick={handleCancelClick}>
+                      Cancel
+                    </Button>
+                  </div>
+                </td>
+              </tr>
+            ) : (
+              // Normal Row
+              <tr key={candidate.candidateId}>
+                <td>{candidate.candidateId}</td>
+                <td>{candidate.name}</td>
+                <td>{candidate.pollId}</td>
+                <td>{candidate.agenda}</td>
+                <td>{candidate.createdAt}</td>
+                <td>{candidate.createdBy}</td>
+                <td>{candidate.updatedAt}</td>
+                <td>{candidate.updatedBy}</td>
+                <td>
+                  <div style={{ display: 'flex', gap: '5px' }}>
+                    <Button
+                      variant="warning"
+                      size="sm"
+                      onClick={() => handleEditClick(candidate)}
+                    >
+                      Edit
+                    </Button>
+                    <Button
+                      variant="danger"
+                      size="sm"
+                      onClick={() => {
+                        setSelectedCandidateId(candidate.candidateId);
+                        openModal();
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  </div>
+                </td>
+              </tr>
+            )
+          )}
         </tbody>
       </Table>
+      <Modal show={showModal} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Are you sure you want to remove {selectedCandidateId}?
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={handleCandidateDelete}>
+            Yes
+          </Button>
+          <Button variant="danger" onClick={closeModal}>
+            No
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      <ToastContainer />
     </Container>
   );
 };
 
 export default CandidateTable;
-
-
-// export const RecordsTable = () => {
-//   return (
-//     <div>
-//       <h2>Records Table</h2>
-//       <p>Here are the records.</p>
-//     </div>
-//   );
-// };
-
-// export default RecordsTable;

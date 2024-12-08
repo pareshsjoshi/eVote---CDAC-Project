@@ -1,20 +1,43 @@
-import React from "react";
-import { Button, Table, Container, Row, Col } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import { Button, Table, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import UserService from "../services/UserService";
 
 const UserTable = () => {
-  const demoData = [
-    { user_id: 1, name: "John Doe", email: "example@gmail.com", dob: "2024-12-04", role: "admin", active: "true", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { user_id: 2, name: "John Doe", email: "example@gmail.com", dob: "2024-12-04", role: "user", active: "true", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { user_id: 3, name: "John Doe", email: "example@gmail.com", dob: "2024-12-04", role: "user", active: "true", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-    { user_id: 4, name: "John Doe", email: "example@gmail.com", dob: "2024-12-04", role: "user", active: "true", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" },
-  ];
+  const [users, setUsers] = useState([]);
+
+  // Fetch all users
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const data = await UserService.getAllUsers();
+        setUsers(data);
+      } catch (error) {
+        console.error("Error fetching users:", error);
+      }
+    };
+    fetchUsers();
+  }, []);
+
+  // Delete user
+  const handleDelete = async (id) => {
+    if (window.confirm("Are you sure you want to delete this user?")) {
+      try {
+        await UserService.deleteUser(id);
+        setUsers(users.filter((user) => user.user_id !== id));
+      } catch (error) {
+        console.error("Error deleting user:", error);
+      }
+    }
+  };
 
   return (
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
-          <Button as={Link} to="/admin/user-create" variant="primary">Add User</Button>
+          <Button as={Link} to="/admin/user-create" variant="primary">
+            Add User
+          </Button>
         </Col>
       </Row>
       <Table striped bordered hover>
@@ -34,22 +57,26 @@ const UserTable = () => {
           </tr>
         </thead>
         <tbody>
-          {demoData.map((item) => (
-            <tr key={item.user_id}>
-              <td>{item.user_id}</td>
-              <td>{item.name}</td>
-              <td>{item.email}</td>
-              <td>{item.dob}</td>
-              <td>{item.role}</td>
-              <td>{item.active}</td>
-              <td>{item.created_at}</td>
-              <td>{item.created_by}</td>
-              <td>{item.updated_at}</td>
-              <td>{item.updated_by}</td>
+          {users.map((user) => (
+            <tr key={user.user_id}>
+              <td>{user.user_id}</td>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>{user.dob}</td>
+              <td>{user.role}</td>
+              <td>{user.active}</td>
+              <td>{user.created_at}</td>
+              <td>{user.created_by}</td>
+              <td>{user.updated_at}</td>
+              <td>{user.updated_by}</td>
               <td>
-                <div style={{ display: 'flex', gap: '5px' }}>
-                  <Button variant="warning" size="sm">Edit</Button>
-                  <Button variant="danger" size="sm">Delete</Button>
+                <div style={{ display: "flex", gap: "5px" }}>
+                  <Button as={Link} to={`/admin/user-edit/${user.user_id}`} variant="warning" size="sm">
+                    Edit
+                  </Button>
+                  <Button variant="danger" size="sm" onClick={() => handleDelete(user.user_id)}>
+                    Delete
+                  </Button>
                 </div>
               </td>
             </tr>
@@ -61,15 +88,3 @@ const UserTable = () => {
 };
 
 export default UserTable;
-
-
-// export const RecordsTable = () => {
-//   return (
-//     <div>
-//       <h2>Records Table</h2>
-//       <p>Here are the records.</p>
-//     </div>
-//   );
-// };
-
-// export default RecordsTable;

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Table, Container, Row, Col } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import CandidateServices from "../services/CandidateServices";
 
 const CandidateTable = () => {
   const demoData = [
@@ -10,42 +11,27 @@ const CandidateTable = () => {
     { id: 4, user_id: 4, name: "Emily Davis", poll_id: 25, agenda: "Lorem Ipsum", created_at: "2024-12-04", created_by: "Lorem Ipsum", updated_at: "2024-12-04", updated_by: "Lorem Ipsum" }
   ];
 
+  const [candidates, setCandidates] = useState([]);
+  const getCandidatesData = async () => {
+    try{
+      const response = await fetchAllCandidates();
+      console.log(response.data);
+      setCandidates(response.data);
+    }
+    catch(error){
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    CandidateServices.fetchAllCandidates().then((res) => {
+      console.log(res.data);
+      setCandidates(res.data);
+    })
+    // getCandidatesData();
+  },[]);
+
   return (
-    // <Container className="mt-4">
-    //   <Row className="mb-3">
-    //     <Col className="text-end">
-    //       <Button variant="primary">Click Me</Button>
-    //     </Col>
-    //   </Row>
-    //   <Table striped bordered hover>
-    //     <thead>
-    //       <tr>
-    //         <th>ID</th>
-    //         <th>Name</th>
-    //         <th>Age</th>
-    //         <th>Profession</th>
-    //         <th>Action</th>
-    //         {/* <th>Delete</th> */}
-    //       </tr>
-    //     </thead>
-    //     <tbody>
-    //       {demoData.map((item) => (
-    //         <tr key={item.id}>
-    //           <td>{item.id}</td>
-    //           <td>{item.name}</td>
-    //           <td>{item.age}</td>
-    //           <td>{item.profession}</td>
-    //           <td>
-    //             <Button variant="warning" size="sm">Edit</Button>
-    //           {/* </td>
-    //           <td> */}
-    //             <Button variant="danger" size="sm">Delete</Button>
-    //           </td>
-    //         </tr>
-    //       ))}
-    //     </tbody>
-    //   </Table>
-    // </Container>
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
@@ -56,7 +42,6 @@ const CandidateTable = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>User ID</th>
             <th>Name</th>
             <th>Poll ID</th>
             <th>Agenda</th>
@@ -68,17 +53,17 @@ const CandidateTable = () => {
           </tr>
         </thead>
         <tbody>
-          {demoData.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.user_id}</td>
-              <td>{item.name}</td>
-              <td>{item.poll_id}</td>
-              <td>{item.agenda}</td>
-              <td>{item.created_at}</td>
-              <td>{item.created_by}</td>
-              <td>{item.updated_at}</td>
-              <td>{item.updated_by}</td>
+          {
+            candidates.map((candidate) => (
+            <tr>
+              <td>{candidate.id}</td>
+              <td>{candidate.name}</td>
+              <td>{candidate.poll_id}</td>
+              <td>{candidate.agenda}</td>
+              <td>{candidate.created_at}</td>
+              <td>{candidate.created_by}</td>
+              <td>{candidate.updated_at}</td>
+              <td>{candidate.updated_by}</td>
               <td>
                 <div style={{ display: 'flex', gap: '5px' }}>
                   <Button variant="warning" size="sm">Edit</Button>

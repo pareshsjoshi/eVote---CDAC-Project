@@ -10,6 +10,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import PollCreationPage from "./pages/PollCreationPage";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./router/routes";
+import Footer from "./components/Footer";
 
 
 
@@ -26,8 +27,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <ErrorBoundary>
-          <Header/>
-          <AppRoutes/>
+        <Header />
+        <AppRoutes />
+        <Footer />
       </ErrorBoundary>
     </BrowserRouter>
   );

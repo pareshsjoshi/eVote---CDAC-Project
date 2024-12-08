@@ -7,7 +7,7 @@ export function fetchAllCandidates() {
 }
 
 export function fetchCandidateById(candidate_id) {
-    return axios.get(`${ADMIN_API_BASE_URL}/${candidate_id}`);
+    return axios.get(`${ADMIN_API_BASE_URL}/candidate-records/${candidate_id}`);
 }
 
 export function createCandidate(candidate) {
@@ -15,9 +15,9 @@ export function createCandidate(candidate) {
 }
 
 export function updateCandidate(candidate_id, candidate) {
-    return axios.put(`${ADMIN_API_BASE_URL}/update/${candidate_id}`, candidate);
+    return axios.put(`${ADMIN_API_BASE_URL}/candidate-update/${candidate_id}`, candidate);
 }
 
 export function deleteCandidateById(candidate_id) {
-    return axios.delete(`${ADMIN_API_BASE_URL}/delete/${candidate_id}`);
+    return axios.delete(`${ADMIN_API_BASE_URL}/candidate-delete/${candidate_id}`);
 }

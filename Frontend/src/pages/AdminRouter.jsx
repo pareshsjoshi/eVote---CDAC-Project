@@ -22,6 +22,7 @@ const AdminRouter = () => {
       <Route path={"/user-records"} element={<UserTable />} ></Route>
       <Route path={"/vote-records"} element={<VotesTable />} ></Route>
       <Route path={"/log-records"} element={<LogsTable />} ></Route>
+      <Route path={"/feedback"} element={<LogsTable />} ></Route>
       <Route path={"/poll-create"} element={<PollCreationPage />} ></Route>
       <Route path={"/candidate-create"} element={<CandidateRegistration />} ></Route>
       <Route path={"/user-create"} element={<RegistrationPage />} ></Route>

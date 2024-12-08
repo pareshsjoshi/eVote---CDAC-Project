@@ -13,7 +13,7 @@ const AdminNavBar = () => {
           <Nav.Link as={Link} to="/admin/user-records">User Table</Nav.Link> 
           <Nav.Link as={Link} to="/admin/vote-records">Votes Table</Nav.Link> 
           <Nav.Link as={Link} to="/admin/log-records">Logs</Nav.Link> 
-          <Nav.Link as={Link} to="/admin/feedback">Logs</Nav.Link> 
+          <Nav.Link as={Link} to="/admin/feedback">Feedback</Nav.Link> 
         </Nav>
       </Container> 
     </Navbar> 

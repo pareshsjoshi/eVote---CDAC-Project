@@ -11,6 +11,7 @@ import VotesTable from "./VotesTable";
 import LogsTable from "./LogsTable";
 import CandidateRegistration from "./CandidateRegistration";
 import RegistrationPage from "./RegistrationPage";
+import FeedbackListComponent from "./FeedbackTable";
 
 const AdminRouter = () => {
   return (
@@ -22,7 +23,7 @@ const AdminRouter = () => {
       <Route path={"/user-records"} element={<UserTable />} ></Route>
       <Route path={"/vote-records"} element={<VotesTable />} ></Route>
       <Route path={"/log-records"} element={<LogsTable />} ></Route>
-      <Route path={"/feedback"} element={<LogsTable />} ></Route>
+      <Route path={"/feedback"} element={<FeedbackListComponent />} ></Route>
       <Route path={"/poll-create"} element={<PollCreationPage />} ></Route>
       <Route path={"/candidate-create"} element={<CandidateRegistration />} ></Route>
       <Route path={"/user-create"} element={<RegistrationPage />} ></Route>

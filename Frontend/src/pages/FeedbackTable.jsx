@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
-import FeedbackService from '../services/FeedbackService';
 import { Link } from 'react-router-dom';
+import { getFeedbacks } from '../services/FeedbackService';
 
 const FeedbackListComponent = () => {
     const [feedbacks, setFeedbacks] = useState([]);
 
+    const getAllFeedbacks = async () => {
+        try {
+          const response = await getFeedbacks();
+          setFeedbacks(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
     useEffect(() => {
-        FeedbackService.getFeedbacks().then((res) => {
-            setFeedbacks(res.data);
-        });
+        getAllFeedbacks();
     }, []);
 
     return (

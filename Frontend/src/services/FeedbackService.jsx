@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const FEEDBACK_API_BASE_URL = "http://localhost:8080/api/feedback";
+const FEEDBACK_API_BASE_URL = "http://localhost:8080/feedback";
 
 export function getFeedbacks() {
     return axios.get(FEEDBACK_API_BASE_URL);

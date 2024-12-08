@@ -8,8 +8,9 @@ const FeedbackPage = () => {
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
-    category: "",
-    feedback: ""
+    userId: 2,
+    category: "Voting Poll",
+    message: "",
   });
 
   const handleFormChange = (e) => {
@@ -34,10 +35,10 @@ const FeedbackPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!feedback.trim()) {
-      setError("Feedback cannot be empty.");
-      return;
-    }
+    // if (!message.trim()) {
+    //   setError("Message cannot be empty.");
+    //   return;
+    // }
     try {
       const response = await createFeedback(form).then(() => {
         navigate("/admin/candidate-records");
@@ -60,11 +61,22 @@ const FeedbackPage = () => {
         <p className="thank-you-message">Thank you for your feedback!</p>
       ) : (
         <form className="feedback-form">
+          {/* <div className="form-group">
+            <label>User ID:</label>
+            <input
+              type="text"
+              name="userId"
+              value={form.userId}
+              onChange={handleFormChange}
+              placeholder="Enter User ID"
+            />
+          </div> */}
           <label htmlFor="category" className="category-label">
             Select Category:
           </label>
           <select
             id="category"
+            name="category"
             value={form.category}
             onChange={handleFormChange}
             className="dropdown-input"
@@ -73,9 +85,10 @@ const FeedbackPage = () => {
             <option value="Voting App">Voting App</option>
           </select>
           <textarea
-            value={form.feedback}
+            name="message"
+            value={form.message}
             onChange={handleFormChange}
-            placeholder="Enter your feedback"
+            placeholder="Enter your message"
             rows="5"
             className="textarea-input"
           />

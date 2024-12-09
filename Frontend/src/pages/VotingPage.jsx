@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../stylesheets/VotingPage.css';
+import { useParams } from 'react-router-dom';
 
 const VotingPage = () => {
+    const { id } = useParams();
     const [candidates, setCandidates] = useState([
         { id: 1, name: 'Vikhe Ptil' },
         { id: 2, name: 'Nilesh Lanke' },
@@ -34,7 +36,7 @@ const VotingPage = () => {
 
                 {/* Voting Options */}
                 <div className="candidate-list mb-4">
-                    <h3>Select a Candidate to Vote</h3>
+                    <h3>Select a Candidate to Vote {id}</h3>
                     {candidates.map((candidate) => (
                         <div key={candidate.id} className="candidate-item mb-3">
                             <span className="candidate-id">{candidate.id}. </span>

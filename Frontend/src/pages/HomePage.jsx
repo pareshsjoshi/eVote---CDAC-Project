@@ -12,7 +12,7 @@ const HomePage = () => {
           A secure and efficient online voting system for everyone.  
           Vote for change with ease and confidence!
         </p>
-        <Link to="/register" className="btn btn-primary btn-lg">
+        <Link to="/register" state={{ message: "VOTER" }} className="btn btn-primary btn-lg">
           Get Started
         </Link>
       </div>

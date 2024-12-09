@@ -41,7 +41,7 @@ const CandidateRegistration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (Object.values(errors).some((error) => error) || Object.values(form).some((value) => value === "")) {
-      alert("Please fix errors and fill all fields before submitting.");
+      alert("Please and fill all fields before submitting.");
       return;
     }
     try {

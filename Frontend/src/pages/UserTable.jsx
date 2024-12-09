@@ -35,7 +35,10 @@ const UserTable = () => {
     <Container className="mt-4">
       <Row className="mb-3">
         <Col className="d-flex justify-content-end">
-          <Button as={Link} to="/admin/user-create" variant="primary">
+          <Button className="mx-2" as={Link} to="/admin/user-create" state={{ message: "ADMIN" }} variant="primary">
+            Add Admin
+          </Button>
+          <Button as={Link} to="/admin/user-create" state={{ message: "VOTER" }} variant="primary">
             Add User
           </Button>
         </Col>
@@ -58,8 +61,8 @@ const UserTable = () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr key={user.user_id}>
-              <td>{user.user_id}</td>
+            <tr key={user.userId}>
+              <td>{user.userId}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.dob}</td>

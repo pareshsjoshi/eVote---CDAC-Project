@@ -7,7 +7,7 @@ import AdminDashboard from "../pages/AdminDashboard";
 import LoginPage from "../pages/LoginPage";
 import ForgotPassword from "../pages/ForgotPassword";
 import PollCreationPage from "../pages/PollCreationPage";
-import RegistrationPage from "../pages/RegistrationPage"
+import RegistrationPage from "../pages/RegistrationPage";
 import ErrorBoundary from "../components/ErrorBoundary";
 import UserProfilePage from "../pages/UserProfilePage";
 import FeedbackPage from "../pages/FeedbackPage";

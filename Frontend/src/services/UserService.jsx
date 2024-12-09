@@ -11,18 +11,18 @@ const UserService = {
     return response.data;
   },
   getUserById: async (id) => {
-    const response = await axios.get(`${BASE_URL}/${id}`);
+    const response = await axios.get(`${BASE_URL}/user-records/${id}`);
     return response.data;
   },
   createUser: async (user) => {
-    const response = await axios.post(`${BASE_URL}/saveUser`, user);
+    const response = await axios.post(`${BASE_URL}/user-create/save`, user);
     return response.data;
   },
   deleteUser: async (id) => {
-    await axios.delete(`${BASE_URL}/${id}`);
+    await axios.delete(`${BASE_URL}/user-delete/${id}`);
   },
   updateUser: async (id, user) => {
-    const response = await axios.put(`${BASE_URL}/${id}`, user);
+    const response = await axios.put(`${BASE_URL}/user-update/${id}`, user);
     return response.data;
   },
 

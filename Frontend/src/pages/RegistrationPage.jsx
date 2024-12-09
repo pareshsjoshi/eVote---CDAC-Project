@@ -3,6 +3,8 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import { Formik, Field, Form as FormikForm, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import stateDistrictData from '../components/StateDistrictMap';
+import { useLocation, useNavigate } from 'react-router-dom';
+import UserService from '../services/UserService';
 
 // Mock State and District Data
 // const stateDistrictData = {
@@ -12,7 +14,11 @@ import stateDistrictData from '../components/StateDistrictMap';
 // };
 
 const RegistrationPage = () => {
+  const location = useLocation();
+  const role = location.state.message || {}; //Accessing role passed through home or admin pages
   const [selectedState, setSelectedState] = useState('');
+  const navigate = useNavigate();
+  const trueBool = true;
 
   const validationSchema = Yup.object().shape({
     aadhar_number: Yup.string()
@@ -58,10 +64,23 @@ const RegistrationPage = () => {
     state: '',
     district: '',
     pincode: '',
+    role: role,
+    isActive: trueBool,
   };
 
   const handleSubmit = (values) => {
-    // event.preventDefault();
+    event.preventDefault();
+    if(values.role == "ADMIN"){
+      UserService.createUser(values).then(() => {
+        navigate("/admin");
+      });
+    }
+    if(values.role == "VOTER"){
+      UserService.createUser(values).then(() => {
+        navigate("/");
+      });
+    }
+    
     console.log('Form Data Submitted:', values);
     alert('Registration successful!');
   };
@@ -70,7 +89,7 @@ const RegistrationPage = () => {
     <Container className="mt-5">
       <Row className="justify-content-center">
         <Col md={12}>
-          <h2 className="text-center mb-4">User Registration</h2>
+          <h2 className="text-center mb-4">User/Admin Registration</h2>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -155,15 +174,15 @@ const RegistrationPage = () => {
                       <Form.Label>Gender</Form.Label>
                       <div className="d-inline-flex align-items-center gap-3">
                         <label className="d-flex align-items-center">
-                          <Field className="me-2" name="gender" type="radio" value="Male" />
+                          <Field className="me-2" name="gender" type="radio" value="MALE" />
                           Male
                         </label>
                         <label className="d-flex align-items-center">
-                          <Field className="me-2" name="gender" type="radio" value="Female" />
+                          <Field className="me-2" name="gender" type="radio" value="FEMALE" />
                           Female
                         </label>
                         <label className="d-flex align-items-center">
-                          <Field className="me-2" name="gender" type="radio" value="Other" />
+                          <Field className="me-2" name="gender" type="radio" value="OTHER" />
                           Other
                         </label>
                       </div>

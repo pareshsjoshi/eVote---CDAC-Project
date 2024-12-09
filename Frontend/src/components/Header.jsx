@@ -159,7 +159,7 @@ const Header = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-outline-light px-3 py-1 mt-2 mt-lg-0"
-                to="/register"
+                to="/register" state={{ message: "VOTER" }}
               >
                 Register
               </Link>

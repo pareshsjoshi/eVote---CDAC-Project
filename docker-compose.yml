@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: cdac
+      MYSQL_DATABASE: eVote_db
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql_network
+    restart: always
+
+networks:
+  mysql_network:
+    driver: bridge

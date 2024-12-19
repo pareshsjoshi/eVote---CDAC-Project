@@ -35,10 +35,10 @@ public class PollController {
 		this.pollService = pollService;
 	}
 
-	@RequestMapping(method = RequestMethod.OPTIONS, value = "/poll-create/save")
-    public ResponseEntity<Void> handleOptions() {
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-    }
+	// @RequestMapping(method = RequestMethod.OPTIONS, value = "/poll-create/save")
+    // public ResponseEntity<Void> handleOptions() {
+    //     return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    // }
 	
 	// Get all polls
 	@GetMapping("/poll-records")

@@ -3,6 +3,7 @@ package com.eVote.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eVote.dto.PollDTO;
-import com.eVote.entity.Polls;
 import com.eVote.service.PollService;
 
 import jakarta.validation.Valid;
@@ -85,5 +85,11 @@ class PollControllerVoter {
 	public ResponseEntity<PollDTO> getPollById(@PathVariable Integer id) {
 		PollDTO pollDTO = pollService.getPollById(id);
 		return pollDTO != null ? ResponseEntity.ok(pollDTO) : ResponseEntity.notFound().build();
+	}
+	
+	@PostMapping("/poll-create/save")
+	public ResponseEntity<PollDTO> createUser(@RequestBody PollDTO pollDTO) {
+		PollDTO savedPoll = pollService.savePoll(pollDTO);
+		return new ResponseEntity<>(savedPoll, HttpStatus.CREATED);
 	}
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eVote.dto.PollDTO;
@@ -19,9 +20,12 @@ import com.eVote.service.PollService;
 
 import jakarta.validation.Valid;
 
+// @CrossOrigin(origins = "http://localhost:5173")
+// @CrossOrigin(origins = "https://fluffy-enigma-w4vvpg6jgrr3g4qg-5173.app.github.dev")
+
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = "https://fluffy-enigma-w4vvpg6jgrr3g4qg-5173.app.github.dev")
+@CrossOrigin(origins = "*")
 public class PollController {
 
 	private final PollService pollService;
@@ -31,6 +35,11 @@ public class PollController {
 		this.pollService = pollService;
 	}
 
+	@RequestMapping(method = RequestMethod.OPTIONS, value = "/poll-create/save")
+    public ResponseEntity<Void> handleOptions() {
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+	
 	// Get all polls
 	@GetMapping("/poll-records")
 	public ResponseEntity<List<PollDTO>> getAllPolls() {
@@ -87,9 +96,9 @@ class PollControllerVoter {
 		return pollDTO != null ? ResponseEntity.ok(pollDTO) : ResponseEntity.notFound().build();
 	}
 	
-	@PostMapping("/poll-create/save")
-	public ResponseEntity<PollDTO> createUser(@RequestBody PollDTO pollDTO) {
-		PollDTO savedPoll = pollService.savePoll(pollDTO);
-		return new ResponseEntity<>(savedPoll, HttpStatus.CREATED);
-	}
+	// @PostMapping("/poll-create/save")
+	// public ResponseEntity<PollDTO> createUser(@RequestBody PollDTO pollDTO) {
+	// 	PollDTO savedPoll = pollService.savePoll(pollDTO);
+	// 	return new ResponseEntity<>(savedPoll, HttpStatus.CREATED);
+	// }
 }

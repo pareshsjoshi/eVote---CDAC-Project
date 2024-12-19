@@ -13,6 +13,7 @@ const PollsTable = () => {
   const getAllPolls = async () => {
     try {
       const response = await fetchAllPolls();
+      console.log(response);
       setPolls(response.data);
     } catch (error) {
       console.log(error);

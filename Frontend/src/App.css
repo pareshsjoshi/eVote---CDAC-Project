@@ -1,0 +1,39 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #A68EAE; /* Lighter purple */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Button Hover Effect */
+button {
+    background-color: #9C7BB7; /* Slightly lighter button color */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B28CDB; /* Hover color for buttons */
+}
+
+/* Text Styling */
+h1, h2, h3, p, label {
+    color: #2C2C2C; /* Dark text for headings and subtext */
+}
+
+/* Form and Input Styling */
+input, textarea {
+    background-color: #F4F4F4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+

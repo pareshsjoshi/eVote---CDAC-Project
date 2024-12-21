@@ -1,4 +1,4 @@
-/* General container styles */
+/*
 .about-us-container {
     padding: 40px;
     max-width: 1200px;
@@ -13,62 +13,96 @@
     font-size: 2.5rem;
   }
   
-  /* Content section */
+ 
   .content {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   
-  /* Card styles */
-  .card {
-    background: #fff;
+
+  /* AboutUsPage.css */
+  .about-us-page {
+    background-color: #A68EAE; /* Updated background color */
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Us Content container */
+.about-us-content-container {
+    background-color: #C8A3C3; /* Updated content container background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.card {
+    background: #fff; /* Retained card background */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-  }
-  
-  .card h2 {
-    color: #0056b3;
+}
+
+.card h2 {
+    color: #0056b3; /* Retained heading color */
     margin-bottom: 15px;
     font-size: 1.5rem;
-  }
-  
-  .card p {
-    color: #333;
+}
+
+.card p {
+    color: #333; /* Retained paragraph text color */
     font-size: 1rem;
     line-height: 1.6;
-  }
-  
-  /* CDAC link section button styling */
-  .cdac-link-button {
+}
+
+button {
+    background-color: #9C7BB7; /* Updated button background color */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B28CDB; /* Updated button hover color */
+}
+
+.cdac-link-button {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
+    background-color: greenyellow; /* Retained link button background */
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-  }
-  
-  .cdac-link-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+.cdac-link-button:hover {
+    background-color: #0056b3; /* Retained hover effect for link button */
+}
+
+@media (max-width: 768px) {
     .about-us-container h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .card h2 {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  
+
     .card p {
-      font-size: 0.95rem;
+        font-size: 0.95rem;
     }
-  }
-  
+}

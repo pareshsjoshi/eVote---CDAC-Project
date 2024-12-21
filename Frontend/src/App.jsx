@@ -1,4 +1,7 @@
 import React from "react";
+import './App.css'; // Adjust the path if necessary
+import './index.css'; // Adjust the path if necessary
+
 // import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import ErrorBoundary from "./components/ErrorBoundary";

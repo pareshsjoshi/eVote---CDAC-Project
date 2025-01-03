@@ -42,7 +42,7 @@
   
   /* About Us Content container */
   .about-us-content-container {
-    background-color: #C8A3C3; /* Updated content container background */
+    background-color: #00757ff4; /* Updated content container background */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -74,7 +74,7 @@
   
   /* Button Styling */
   button {
-    background-color: #9C7BB7; /* Updated button background color */
+    background-color: #00757ff4; /* Updated button background color */
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -85,7 +85,7 @@
   }
   
   button:hover {
-    background-color: #B28CDB; /* Updated button hover color */
+    background-color: #00757ff4; /* Updated button hover color */
   }
   
   /* Link Button Styling */

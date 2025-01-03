@@ -129,11 +129,9 @@ select:focus {
 
 /* UserProfilePage.css */
 
-
-
 html, body {
   font-family: Arial, sans-serif;
-  background-color: #A68EAE; /* Overall background color */
+  background-color:#00757ff4; /* Overall background color */
   margin: 0;
   padding: 0;
   height: 100%; /* Ensures full height coverage */
@@ -147,7 +145,7 @@ body {
 .user-profile-page {
   max-width: 900px;
   margin: 20px auto;
-  background: #C8A3C3; /* Page-specific background */
+  background: #00757ff4; /* Page-specific background */
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
@@ -156,14 +154,14 @@ body {
 
 .user-profile-page h1 {
   font-size: 28px;
-  color: black; 
+  color: black; /* Change the heading color to dark black */
   margin-bottom: 20px;
   text-align: center;
   padding-bottom: 10px;
 }
 
 .profile-container {
-  background: #C8A3C3; /* Profile section background */
+  background: #00757ff4; /* Profile section background */
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ddd;
@@ -171,7 +169,7 @@ body {
 }
 
 .profile-container:hover {
-  background: #A68EAE; /* Hover effect */
+  background: #00757ff4; /* Hover effect */
   transition: 0.3s ease;
 }
 
@@ -195,7 +193,7 @@ body {
 .edit-form .form-input,
 textarea,
 select {
-  background: #ffffff; 
+  background: #00757ff4; 
   color: #212529; 
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -216,7 +214,7 @@ select {
 textarea:focus,
 select:focus {
   outline: none;
-  border: 1px solid #007bff; 
+  border: 1px solid #000000; 
 }
 
 .error-message {
@@ -237,31 +235,42 @@ select:focus {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background: #007bff; 
+  background:#00757ff4; /* New button background color */
   color: #ffffff;
   transition: all 0.3s ease;
 }
 
 .save-btn {
-  background-color: #4caf50; 
+  background-color: #4caf50; /* Green button for saving */
 }
 
 .cancel-btn {
-  background-color: #f44336; 
+  background-color: #f44336; /* Red button for cancelling */
 }
 
 .edit-btn {
-  background-color: #4caf50; 
+  background-color: green; /* Neutral gray button for editing */
 }
 
 .delete-btn {
-  background-color: #f44336; 
+  background-color: #dc3545; /* Bright red button for deleting */
 }
 
 footer {
-  background-color: #A68EAE; /* Matches overall background */
+  background-color: #00757ff4; /* Matching footer background with buttons */
   color: white;
   text-align: center;
   padding: 10px 0;
   margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Specific sections with updated text color to dark black */
+.about-us-page, .about-us-page h1, .about-us-page p,
+.about-us-page a {
+  color: #000000; /* Change all text in about-us section to dark black */
+}
+
+.contact-page, .contact-page h1, .contact-page p,
+.contact-page a {
+  color: #000000; /* Change all text in contact page to dark black */
 }

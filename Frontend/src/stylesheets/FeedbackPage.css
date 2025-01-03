@@ -67,7 +67,7 @@
   }
   
   .feedback-page {
-    background-color: #A68EAE; /* Updated background color from the new version */
+    background-color:#00757ff4; /* Updated background color from the new version */
     max-width: 900px;
     margin: 2% auto;
     padding: 10px;
@@ -122,7 +122,7 @@
   }
   
   button {
-    background-color: #9C7BB7; /* Updated button background color */
+    background-color:#00757ff4; /* Updated button background color */
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -133,7 +133,7 @@
   }
   
   button:hover {
-    background-color: #B28CDB; /* Hover color from updated version */
+    background-color: #00757ff4; /* Hover color from updated version */
   }
   
   .feedback-form-container {

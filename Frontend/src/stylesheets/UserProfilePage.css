@@ -128,17 +128,26 @@ select:focus {
 */
 
 /* UserProfilePage.css */
-body {
+
+
+
+html, body {
   font-family: Arial, sans-serif;
-  background-color: #A68EAE; /* Updated background color */
+  background-color: #A68EAE; /* Overall background color */
   margin: 0;
   padding: 0;
+  height: 100%; /* Ensures full height coverage */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Allows footer to stay at the bottom */
 }
 
 .user-profile-page {
   max-width: 900px;
   margin: 20px auto;
-  background: #C8A3C3; /* Updated background color */
+  background: #C8A3C3; /* Page-specific background */
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
@@ -154,16 +163,15 @@ body {
 }
 
 .profile-container {
-  background: #C8A3C3; /* Updated background color */
+  background: #C8A3C3; /* Profile section background */
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-container:hover {
-  background: #A68EAE; /* Updated hover background */
+  background: #A68EAE; /* Hover effect */
   transition: 0.3s ease;
 }
 
@@ -248,4 +256,12 @@ select:focus {
 
 .delete-btn {
   background-color: #f44336; 
+}
+
+footer {
+  background-color: #A68EAE; /* Matches overall background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Ensures footer stays at the bottom */
 }

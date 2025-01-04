@@ -74,115 +74,115 @@
   }
   */
 
+/* CandidateRegistrationPage.css */
+.candidate-registration-page {
+  background-color: #00757ff4; /* Updated background color */
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* CandidateRegistrationPage.css */
-  .candidate-registration-page {
-    background-color:#00757ff4; /* Updated background color */
-    padding: 40px 20px;
-    min-height: 100vh;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Candidate Registration Form container */
-  .candidate-registration-form-container {
-    background-color: #00757ff4; /* Updated form container background */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-  }
-  
-  .candidate-registration {
-    max-width: 50%;
-    margin: auto;
-    padding: 20px;
-    background: #f9f9f9; /* Retained individual section background */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .btn.register-btn {
-    background-color: #007bff; /* Retained button background color */
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .btn.register-btn:hover {
-    background-color: #0056b3; /* Retained button hover color */
-  }
-  
-  form {
-    margin-bottom: 10%;
-  }
-  
-  .candidate-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .candidate-list li {
-    background: #e9ecef; /* Retained list item background */
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    line-height: 1.6;
-  }
-  
-  button {
-    background-color: #00757ff4; /* Updated button background */
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color:#00757ff4; /* Updated hover color */
-  }
-  
+/* Candidate Registration Form container */
+.candidate-registration-form-container {
+  background-color: #00757ff4; /* Updated form container background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Form content background */
+.candidate-registration {
+  max-width: 50%;
+  margin: auto;
+  padding: 20px;
+  background: #00757ff4; /* Updated background to match overall theme */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #000000; /* Dark black color for headers */
+}
+
+/* Form group for labels and inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000; /* Dark black color for labels */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* Button styling */
+.btn.register-btn {
+  background-color: #000000; /* Dark black color for register button */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.btn.register-btn:hover {
+  background-color: #333333; /* Darker shade of black on hover */
+}
+
+button {
+  background-color: #000000; /* Dark black color for general buttons */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333333; /* Darker shade of black on hover */
+}
+
+/* Candidate list styling */
+.candidate-list {
+  list-style: none;
+  padding: 0;
+}
+
+.candidate-list li {
+  background: #e9ecef;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  line-height: 1.6;
+}

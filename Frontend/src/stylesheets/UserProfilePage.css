@@ -129,9 +129,16 @@ select:focus {
 
 /* UserProfilePage.css */
 
+
+
+
+
+
+/* Global styling */
+/* Global styling */
 html, body {
   font-family: Arial, sans-serif;
-  background-color:#00757ff4; /* Overall background color */
+  background-color: #00757ff4; /* Overall background color */
   margin: 0;
   padding: 0;
   height: 100%; /* Ensures full height coverage */
@@ -142,6 +149,7 @@ body {
   flex-direction: column; /* Allows footer to stay at the bottom */
 }
 
+/* User profile page styling */
 .user-profile-page {
   max-width: 900px;
   margin: 20px auto;
@@ -154,12 +162,13 @@ body {
 
 .user-profile-page h1 {
   font-size: 28px;
-  color: black; /* Change the heading color to dark black */
+  color: #000000 !important; /* Force dark black color */
   margin-bottom: 20px;
   text-align: center;
   padding-bottom: 10px;
 }
 
+/* Profile container styling */
 .profile-container {
   background: #00757ff4; /* Profile section background */
   padding: 20px;
@@ -176,13 +185,14 @@ body {
 .profile-container p {
   font-size: 16px;
   margin: 5px 0;
-  color: #212529; 
+  color: #000000 !important; /* Force dark black color */
 }
 
 .profile-container strong {
-  color: #000000; 
+  color: #000000 !important; /* Force dark black color for strong elements */
 }
 
+/* Edit form styling */
 .edit-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -193,8 +203,8 @@ body {
 .edit-form .form-input,
 textarea,
 select {
-  background: #00757ff4; 
-  color: #212529; 
+  background: #00757ff4;
+  color: #000000 !important; /* Force dark black color */
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -218,7 +228,7 @@ select:focus {
 }
 
 .error-message {
-  color: #ff0000; 
+  color: #ff0000;
   font-size: 14px;
   grid-column: span 2;
 }
@@ -235,7 +245,7 @@ select:focus {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background:#00757ff4; /* New button background color */
+  background: #00757ff4; /* Button background color */
   color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -256,6 +266,7 @@ select:focus {
   background-color: #dc3545; /* Bright red button for deleting */
 }
 
+/* Footer styling */
 footer {
   background-color: #00757ff4; /* Matching footer background with buttons */
   color: white;
@@ -264,13 +275,12 @@ footer {
   margin-top: auto; /* Ensures footer stays at the bottom */
 }
 
-/* Specific sections with updated text color to dark black */
+/* Text color adjustments for specific sections */
 .about-us-page, .about-us-page h1, .about-us-page p,
-.about-us-page a {
-  color: #000000; /* Change all text in about-us section to dark black */
-}
-
+.about-us-page a,
+.services-page, .services-page h1, .services-page p,
+.services-page a,
 .contact-page, .contact-page h1, .contact-page p,
 .contact-page a {
-  color: #000000; /* Change all text in contact page to dark black */
+  color: #000000 !important; /* Change all section text to dark black */
 }

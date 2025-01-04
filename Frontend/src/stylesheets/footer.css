@@ -1,0 +1,66 @@
+/* Footer Styling */
+/* Footer styling */
+/* Set the background color for the entire page */
+/* Footer styling */
+/* Global page background color */
+/* General Page Background */
+/*body {
+  background-color: #00757ff4; /* Match page background color */
+  /* General Page Background */
+body {
+  background-color: #00757ff4; /* Match page background color */
+  color: #000000; /* Default text color for the page */
+  font-family: Arial, sans-serif; /* Set a default font for the page */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling (matching footer background color) */
+header {
+  background-color: #00757ff4; /* Same color as footer and navigation */
+  color: #000000; /* Dark black text color for header */
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Footer styling */
+.r2v-footer {
+  background-color: #121d63d1; /* Match navigation color */
+  color: #000000; /* Dark black color for footer text */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Footer <p> tags text color */
+.r2v-footer p {
+  color: #000000; /* Dark black text color for all footer <p> tags */
+  font-size: 1rem; /* Font size for footer text */
+  margin: 0;
+}
+
+/* Footer Links Styling */
+.r2v-footer a {
+  color: #FFD700; /* Gold color for links in footer */
+  text-decoration: none;
+}
+
+.r2v-footer a:hover {
+  color: #2e6e3c; /* Darker gold color on hover */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .r2v-footer {
+      font-size: 0.875rem; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Ensuring the header and footer match */
+header, .r2v-footer {
+  background-color: #00757ff4; /* Same background color for both */
+}

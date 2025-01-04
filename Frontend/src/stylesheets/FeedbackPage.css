@@ -61,18 +61,20 @@
      margin-top: 20px;
    }*/
 
-   /* FeedbackPage.css */
    body {
     font-family: Arial, sans-serif;
+    background-color: #00757ff4; /* Unified background color for all pages */
+    margin: 0;
+    padding: 0;
   }
   
   .feedback-page {
-    background-color:#00757ff4; /* Updated background color from the new version */
+    background-color: #00757ff4; /* Matching overall background color */
     max-width: 900px;
     margin: 2% auto;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow retained from previous */
+    border: 2px solid white; /* Added white border */
     text-align: center;
   }
   
@@ -93,7 +95,7 @@
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.503);
+    border: 2px solid #000000; /* Dark black border */
   }
   
   .textarea-input {
@@ -101,17 +103,17 @@
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.503);
+    border: 2px solid #000000; /* Dark black border */
   }
   
   .thank-you-message {
     font-size: 18px;
     font-weight: bold;
-    color: Green;
+    color: #f71111; /* Dark red color for thank you message */
   }
   
   .submit-btn {
-    background-color: #007bff; /* Previous button background color */
+    background-color: #003366; /* Dark blue button background */
     color: white;
     width: 120px;
     padding: 10px 20px;
@@ -119,10 +121,17 @@
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #001a33; /* Slightly darker blue on hover */
   }
   
   button {
-    background-color:#00757ff4; /* Updated button background color */
+    background-color: #003366; /* Dark blue button background */
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -133,17 +142,23 @@
   }
   
   button:hover {
-    background-color: #00757ff4; /* Hover color from updated version */
+    background-color: #001a33; /* Slightly darker blue on hover */
   }
   
   .feedback-form-container {
-    background-color: #00757ff4; /* Updated background color */
+    background-color: #00757ff4; /* Matching overall background color */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Retained shadow */
-    
+    border: 2px solid white; /* Added white border */
     width: 100%;
     max-width: 600px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #00757ff4; /* Footer background matches page */
+    color: white;
+    padding: 10px;
     text-align: center;
   }
   

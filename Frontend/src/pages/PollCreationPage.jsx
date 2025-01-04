@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../stylesheets/PollCreationPage.css";
 import { createPoll } from "../services/PollService";
 import { useNavigate } from "react-router-dom";
 

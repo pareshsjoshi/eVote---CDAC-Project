@@ -1,3 +1,5 @@
+
+import "../stylesheets/AdminDashboard.css";
 import { MyBarChart } from "../components/TestChar";
 
 function AdminDashboard() {

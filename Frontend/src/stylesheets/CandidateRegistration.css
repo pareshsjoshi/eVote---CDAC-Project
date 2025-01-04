@@ -138,7 +138,7 @@ textarea {
 }
 
 .error-message {
-  color: red;
+  color: rgb(36, 25, 248);
   font-size: 12px;
 }
 

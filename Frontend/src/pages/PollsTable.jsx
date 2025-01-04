@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+
+import "../stylesheets/PollTable.css";
 import { Button, Table, Container, Row, Col, Modal, ToastContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { deletePollById, fetchAllPolls, updatePoll } from "../services/PollService";

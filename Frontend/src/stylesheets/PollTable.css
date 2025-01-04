@@ -1,0 +1,74 @@
+/* Set the background color for the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  .poll-table-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .poll-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poll-table th,
+  .poll-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .poll-table th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .poll-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .poll-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .poll-footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .poll-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .poll-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Updated Button Styles */
+  button {
+    background-color: #00757f; /* Updated button background color */
+    color: #ffffff; /* Updated button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #670e00; /* Hover background color */
+    color: #e0f7fa; /* Hover text color */
+  }
+  

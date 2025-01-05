@@ -72,7 +72,7 @@ body, html {
 /* LoginPage.css */
 
 
-
+/* Global styles for body and html */
 body, html {
   height: 100%;
   margin: 0;
@@ -94,15 +94,15 @@ body, html {
   background-color: #00757ff4; /* Background color for form */
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(34, 94, 57, 0.1);
+  box-shadow: 0 4px 10px rgba(2, 179, 70, 0.1);
   width: 100%;
   max-width: 600px;
   text-align: center;
 }
 
-/* Button Hover Effect */
+/* Button Styles */
 button {
-  background-color: #FFD700; /* Button color (Golden Yellow) */
+  background-color: #003366; /* Button color */
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -112,6 +112,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
+/* Remove hover color change */
 button:hover {
-  background-color: #FFCC00; /* Button hover color (Darker Yellow) */
+  background-color: #003366; /* Keep the same color on hover */
 }

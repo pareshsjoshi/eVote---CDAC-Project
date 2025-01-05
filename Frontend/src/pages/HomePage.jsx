@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "../stylesheets/HomePage.css";
+
 const HomePage = () => {
   return (
     <div className="container my-5">

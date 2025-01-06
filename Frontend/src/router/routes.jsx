@@ -1,9 +1,9 @@
-import React from "react";
+/*import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import ContactPage from "../pages/ContactPage";
 import AdminDashboard from "../pages/AdminDashboard";
-// import ErrorPage from "../pages/ErrorPage";
+
 import LoginPage from "../pages/LoginPage";
 import ForgotPassword from "../pages/ForgotPassword";
 import PollCreationPage from "../pages/PollCreationPage";
@@ -32,7 +32,7 @@ const AppRoutes = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/admin-dashboard" element={<AdminDashboard />} />
-      {/* <Route path="*" element={<ErrorPage />} /> Catch-all route */}
+      
       <Route path="*" element={<div>Page Not Found</div>} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/forgot-password" element={< ForgotPassword />} />
@@ -41,22 +41,14 @@ const AppRoutes = () => {
       <Route path="/user-profile" element={<UserProfilePage />} />
       <Route path="/feedback" element={<FeedbackPage />} />
       <Route path="/about" element={<AboutUs />} />
-      {/* <Route path="/poll-id" element={<VotingPage />} /> */}
+  
       <Route path="/admin/*" element={<Admin />} />
       <Route path="/can-reg" element={<CandidateRegistration />} />
       <Route path="/polls" element={<Polls />} />
       <Route path={"/polls/:id"} element={<VotingPage />} ></Route>
 
 
-      {/* <Route path={"/admin/dashboard"} element={<Dashboard />} ></Route>
-      <Route path={"/admin/records"} element={<RecordsTable />} ></Route> */}
-
-
-
-      {/*
-      <Route path="/voter-dashboard" element={<VoterDashboard />} />
-      <Route path="/manage-voters" element={<VoterManagementPage />} />
-      <Route path="/results" element={<ResultsPage />} /> */}
+     
 
 
     </Routes>
@@ -64,4 +56,9 @@ const AppRoutes = () => {
   );
 };
 
-export default AppRoutes;
+export default AppRoutes;*/
+
+
+
+
+

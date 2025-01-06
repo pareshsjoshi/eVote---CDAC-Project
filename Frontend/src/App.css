@@ -74,7 +74,8 @@ button:hover {
   width: 100%;
   max-width: 400px; /* Limit form width */
   text-align: center;
-  color: #000000; /* Dark text color for better readability */
+  color: #000000;
+   /* Dark text color for better readability */
 }
 
 /* Button hover effect */

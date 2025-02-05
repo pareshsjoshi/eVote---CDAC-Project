@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import ContactPage from "../pages/ContactPage";
@@ -56,7 +56,7 @@ const AppRoutes = () => {
   );
 };
 
-export default AppRoutes;*/
+export default AppRoutes;
 
 
 

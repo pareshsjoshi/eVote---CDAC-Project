@@ -1,0 +1,3 @@
+// export const API_BASE_URL = 'https://fluffy-enigma-w4vvpg6jgrr3g4qg-8081.app.github.dev/';
+export const API_BASE_URL = 'http://localhost:8081';
+export const ADMIN_API_BASE_URL = `${API_BASE_URL}/admin`;

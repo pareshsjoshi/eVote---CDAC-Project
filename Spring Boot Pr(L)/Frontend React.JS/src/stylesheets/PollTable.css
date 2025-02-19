@@ -1,0 +1,90 @@
+/* Set the background color for the entire page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.poll-table-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.poll-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.poll-table th,
+.poll-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.poll-table th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.poll-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.poll-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.poll-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.poll-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.poll-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles for Add Poll and Create Poll */
+button,
+.poll-table-container .btn-primary {
+  background-color: #003366; /* Set background color to #003366 */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove borders */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Remove hover effect for Add Poll and Create Poll buttons */
+button:hover,
+.poll-table-container .btn-primary:hover {
+  background-color: #003366; /* Keep the same color on hover */
+  color: #ffffff; /* Keep white text */
+}
+
+/* Additional styling for modal buttons */
+.modal-footer .btn-success,
+.modal-footer .btn-danger {
+  background-color: #003366; /* Set same color for modal buttons */
+  color: #ffffff;
+  border: none;
+}
+
+.modal-footer .btn-success:hover,
+.modal-footer .btn-danger:hover {
+  background-color: #003366; /* Remove hover effect for modal buttons */
+  color: #ffffff;
+}

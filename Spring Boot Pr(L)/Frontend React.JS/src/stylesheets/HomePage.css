@@ -1,0 +1,77 @@
+/* Set the background color for the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00757ff4; /* Apply the specified background color */
+    color: #ffffff; /* Ensure text is readable on the background */
+  }
+  
+  /* Container styling */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Centering and styling the header */
+  .text-center h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* White text for better contrast */
+  }
+  
+  .text-center p {
+    color: #e0e0e0; /* Light grey for a subtle contrast */
+    font-size: 1.2rem;
+  }
+  
+  /* Button styles for "Get Started", "Login", and "View Elections" */
+  .btn-primary {
+    background-color: #003366; /* Dark blue background */
+    border: none;
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #001a33; /* Darker shade on hover */
+  }
+  
+  /* Styling for the cards */
+  .card {
+   /* background-color: #ffffff;  White card background */
+   background-color: #003366;
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    color: #003366; /* Dark text color */
+  }
+  
+  .card-body h3 {
+    color: #003366; /* Dark heading color */
+  }
+  
+  .card-body p {
+    color: #555555; /* Subtle grey for card descriptions */
+  }
+  
+  /* Button styles for "Login" and "View Elections" */
+  .btn-secondary,
+  .btn-success {
+    background-color: #003366; /* Dark blue background */
+    border: none;
+    /*color: #ffffff;  White text */
+    color: red ;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-secondary:hover,
+  .btn-success:hover {
+    background-color: #003366; /* Darker shade on hover */
+  }
+  
+  /* Margin adjustments for responsiveness */
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  

@@ -1,0 +1,32 @@
+/* General Styles for the Admin Dashboard */
+body {
+    background-color: #f8f9fa; /* Light gray background to match a modern dashboard theme */
+    color: #000000; /* Black text for the entire page */
+    font-family: 'Arial', sans-serif; /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header and Footer Styling */
+  header, footer {
+    color: #000000; /* Ensures all header and footer text is black */
+  }
+  
+  /* Bar Chart Styling */
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .chart-container canvas {
+    max-width: 90%; /* Reduce the bar chart size slightly */
+    max-height: 400px; /* Maintain a reasonable height */
+  }
+  
+  /* Additional Admin Dashboard Specific Styling */
+  .admin-dashboard {
+    padding: 20px;
+  }
+  

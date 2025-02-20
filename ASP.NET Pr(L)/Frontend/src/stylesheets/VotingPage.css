@@ -1,0 +1,142 @@
+/*.election-voting-system {
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+}
+
+.poll-container {
+    justify-content: center;
+    
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.candidate-list {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.candidate-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.candidate-id {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.candidate-name {
+    flex-grow: 1;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-successes {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+}
+
+.vote-results {
+    background-color: #d4edda;
+    padding: 15px;
+    border-radius: 5px;
+    color: #155724;
+    margin-top: 20px;
+}*/
+
+/* VotingPage.css */
+.election-voting-system {
+    background-color: #BFA7D7; /* Updated background color */
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Voting Form container */
+.poll-container {
+    background-color: #00757ff4; /* Updated form container background color */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Candidate List */
+.candidate-list {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Candidate Item */
+.candidate-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.candidate-id {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.candidate-name {
+    flex-grow: 1;
+}
+
+/* Button Styles */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-successes {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+}
+
+/* Vote Results */
+.vote-results {
+    background-color: #d4edda;
+    padding: 15px;
+    border-radius: 5px;
+    color: #155724;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+button {
+    background-color:#00757ff4; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00757ff4; /* Hover Color */
+}

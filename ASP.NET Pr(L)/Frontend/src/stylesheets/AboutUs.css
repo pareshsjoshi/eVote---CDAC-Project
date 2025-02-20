@@ -1,0 +1,85 @@
+.about-us-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us-container h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  /* Adjust card container */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align cards horizontally */
+    gap: 30px; /* Increased gap between cards */
+  }
+  
+  /* Card styling */
+  .card {
+    background: #fff; /* White background for the card */
+    border-radius: 15px; /* Slightly larger rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better depth */
+    padding: 25px;
+    text-align: center;
+    width: 90%; /* Increased card width */
+    max-width: 800px; /* Wider max width for larger screens */
+  }
+  
+  .card h2 {
+    color: #0056b3; /* Heading color */
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Slightly larger heading font */
+  }
+  
+  .card p {
+    color: #333; /* Text color */
+    font-size: 1.1rem; /* Larger paragraph font */
+    line-height: 1.8; /* Slightly more spaced-out lines */
+  }
+  
+  /* Link Button Styling */
+  /* Link Button Styling */
+.cdac-link-button {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffffff; /* White text for better contrast */
+    background-color: #4CAF50; /* Soft green background */
+    padding: 12px 25px; /* Slightly larger padding for better touch target */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .cdac-link-button:hover {
+    background-color: #45a049; /* Lighter green on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-us-container h1 {
+      font-size: 2.2rem;
+    }
+  
+    .card {
+      width: 95%; /* Adjust width for smaller screens */
+    }
+  
+    .card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .card p {
+      font-size: 1rem;
+    }
+  }
+  

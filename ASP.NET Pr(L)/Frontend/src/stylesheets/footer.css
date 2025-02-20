@@ -1,0 +1,43 @@
+/* Global Page Background */
+body {
+  background-color: #00757ff4; /* Page background color */
+  color: #ffffff; /* Default text color */
+  font-family: Arial, sans-serif; /* Default font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer Styling */
+.r2v-footer {
+  background-color: #000000; /* Black background for footer */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Footer Links Styling */
+.r2v-footer a {
+  color: #FFD700; /* Gold color for links */
+  text-decoration: none;
+}
+
+.r2v-footer a:hover {
+  color: #FFA500; /* Orange color on hover */
+}
+
+/* Footer <h6> tags */
+.r2v-footer h6 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .r2v-footer {
+    font-size: 0.875rem; /* Smaller font size on mobile */
+  }
+}

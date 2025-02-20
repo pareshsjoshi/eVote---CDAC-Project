@@ -1,0 +1,234 @@
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\appsettings.Development.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\appsettings.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\libman.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.staticwebassets.endpoints.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.exe
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.deps.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.runtimeconfig.json
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Backend.pdb
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\MySqlConnector.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.csproj.AssemblyReference.cache
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.AssemblyInfoInputs.cache
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.AssemblyInfo.cs
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.csproj.CoreCompileInputs.cache
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cs
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cache
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\scopedcss\bundle\Backend.styles.css
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets.build.json
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets.development.json
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.Backend.props
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Backend.props
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Backend.props
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.csproj.Up2Date
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.dll
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\refint\Backend.dll
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.pdb
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\ref\Backend.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Humanizer.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.CodeDom.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Mini_Project\Backend\Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Mini_Project\Backend\Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.csproj.AssemblyReference.cache
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.AssemblyInfoInputs.cache
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.AssemblyInfo.cs
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.csproj.CoreCompileInputs.cache
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.MvcApplicationPartsAssemblyInfo.cache
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\appsettings.Development.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\appsettings.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\libman.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.staticwebassets.endpoints.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.exe
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.deps.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.runtimeconfig.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Backend.pdb
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Humanizer.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\MySqlConnector.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.CodeDom.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\scopedcss\bundle\Backend.styles.css
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.Backend.props
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Backend.props
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Backend.props
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.csproj.Up2Date
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\refint\Backend.dll
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.pdb
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
+D:\CDAC Project\DOTNET PROJ\Backend\Backend\obj\Debug\net8.0\ref\Backend.dll
